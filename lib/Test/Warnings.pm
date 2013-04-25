@@ -88,7 +88,7 @@ sub allowing_warnings() { $warnings_allowed }
 # call at any time to assert no (unexpected) warnings so far
 sub had_no_warnings(;$)
 {
-    _builder()->ok(!$forbidden_warnings_found, shift || 'no (unexpected) warnings');
+    _builder->ok(!$forbidden_warnings_found, shift || 'no (unexpected) warnings');
 }
 
 1;
